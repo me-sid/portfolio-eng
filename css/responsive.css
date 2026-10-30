@@ -1,0 +1,5 @@
+@media(max-width:900px){.grid3,.grid4{grid-template-columns:1fr 1fr}.project,.split,.rrow{grid-template-columns:1fr}.project:nth-child(even) .shot{order:0}}
+@media(max-width:700px){
+.menu-btn{display:block}.nav nav{position:absolute;top:100%;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--line);display:none}
+.nav nav.open{display:block}.nav ul{flex-direction:column;align-items:flex-start;gap:0;padding:1rem 1.5rem}.nav nav li{width:100%;padding-block:.6rem;border-bottom:1px solid var(--line)}
+.grid2,.grid3,.grid4{grid-template-columns:1fr}.hero{padding-block:var(--s4) var(--s3)}.wrap{padding-block:var(--s3)}.timeline{padding-left:1.5rem}.timeline li::before{left:calc(-1.5rem - 4px)}.actions{gap:1rem;flex-direction:column}}
