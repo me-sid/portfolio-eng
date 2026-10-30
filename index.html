@@ -5,6 +5,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=Inter:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/responsive.css">
+<style>
+.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:var(--s4);align-items:start}
+.hero>*{grid-column:1}
+.hero>.hero-photo{grid-column:2;grid-row:1/span 5;width:clamp(200px,24vw,300px);aspect-ratio:1;border-radius:50%;object-fit:cover;border:1px solid var(--line);align-self:center;background:var(--card)}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero>.hero-photo{grid-column:1;grid-row:auto;order:-1;width:160px;margin-bottom:var(--s3);align-self:start}}
+</style>
 </head><body class="">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap nav">
@@ -13,7 +19,7 @@
 <nav aria-label="Main"><ul id="nav-list"><li><a href="index.html" aria-current="page">Home</a></li><li><a href="projects.html">Projects</a></li><li><a href="learning.html">Learning</a></li><li><a href="writing.html">Research</a></li><li><a href="resume.html">Resume</a></li><li><a class="gh" href="https://github.com/me-sid/" rel="noopener">GitHub ↗</a></li></ul></nav>
 </div></header>
 <main id="main">
-<section class="wrap hero reveal"><p class="mono label">VIT Vellore · B.Tech CSE · AI &amp; Data Engineering</p>
+<section class="wrap hero reveal"><img class="hero-photo" src="assets/images/picture.jpeg" alt="Portrait of Siddhartha Parashar" width="300" height="300" fetchpriority="high"><p class="mono label">VIT Vellore · B.Tech CSE · AI &amp; Data Engineering</p>
 <h1>Hello, I’m Siddhartha.</h1><p class="sub">Computer Science Student · Developer · Curious Learner</p>
 <p class="lede">I am a Computer Science and Engineering student specialising in Artificial Intelligence and Data Engineering at VIT Vellore. I enjoy understanding how software works and transforming ideas into functional applications. My learning approach revolves around building projects, experimenting with technologies and exploring concepts beyond the classroom.</p>
 <p class="actions"><a class="arrow" href="projects.html">Explore my projects →</a><a class="arrow" href="resume.html">View my resume →</a></p></section>
@@ -21,7 +27,7 @@
 <section class="wrap reveal"><p class="mono label">Areas of interest</p><div class="grid4"><div class="cell"><h3>Software Development</h3><p>Turning ideas into working applications, from desktop tools to web projects.</p></div><div class="cell"><h3>Artificial Intelligence</h3><p>Learning how intelligent systems are built and where they can be applied.</p></div><div class="cell"><h3>Data Engineering</h3><p>Understanding how data is stored, structured and prepared for use.</p></div><div class="cell"><h3>Open Source Development</h3><p>Contributing to shared projects and learning from collaboration.</p></div></div></section>
 <section class="wrap split reveal"><h2>Technologies</h2><div><ul class="tags mono"><li>Python</li><li>C</li><li>SQL</li><li>MySQL</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git</li><li>GitHub</li><li>Django</li><li>NumPy</li><li>Pandas</li></ul></div></section>
 <section class="wrap reveal"><p class="mono label">Featured projects</p><div class="grid3"><article class="card"><p class="mono label">01</p><h3>Ultimate Library</h3><p>A desktop library management application built with Python and Tkinter, with SQLite for persistent storage.</p><ul class="tags mono"><li>Python</li><li>Tkinter</li><li>SQLite</li></ul><a class="arrow" href="projects.html#p1">Read more →</a></article><article class="card"><p class="mono label">02</p><h3>Encrypto</h3><p>A password manager focused on storing credentials using modern cryptographic techniques.</p><ul class="tags mono"><li>Python</li><li>TtkBootstrap</li><li>AES-GCM</li><li>PBKDF2-HMAC-SHA256</li></ul><a class="arrow" href="projects.html#p2">Read more →</a></article><article class="card"><p class="mono label">03</p><h3>BankEase</h3><p>A console-based banking system in Python, using dictionaries in memory and JSON for persistent storage.</p><ul class="tags mono"><li>Python</li><li>JSON</li></ul><a class="arrow" href="projects.html#p3">Read more →</a></article></div></section>
-<section class="wrap split reveal"><h2>Achievements</h2><ul class="rows"><li>Subject Topper - Computer Science</li><li>Gold Medal for Best Interjector</li><li>Top 10 finish in the Fork This open-source competition at VIT</li></ul></section></main>
+<section class="wrap split reveal"><h2>Achievements</h2><ul class="rows"><li>100/100 in Class 12 Computer Science</li><li>Gold Medal for Best Interjector</li><li>Top 10 finish in the Fork This open-source competition at VIT</li></ul></section></main>
 <footer class="site-footer"><div class="wrap foot">
 <p class="mono">© <span id="year">2026</span> Siddhartha Parashar</p>
 <ul class="mono"><li><a href="https://github.com/me-sid/" rel="noopener">GitHub</a></li><li><a href="https://www.linkedin.com/in/siddhartha-parashar/" rel="noopener">LinkedIn</a></li><li><a href="mailto:siddhartha.parashar@gmail.com">Email</a></li></ul>
